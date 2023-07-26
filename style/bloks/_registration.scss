@@ -1,0 +1,67 @@
+.registration {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+.registration-form {
+    padding-left: 10px;
+    & h3 {
+        @include font (normal, 300, 16px, $ColorBackground);
+    }
+    & label {
+        @include font (normal, 300, 11px, #000000); 
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    & p {
+        @include font (normal, 300, 13px, #B1B1B1);
+        margin: 0 auto;
+    }
+
+.registration-text {
+    outline: none;
+    display: block;
+    width: 360px;
+    height: 45px;
+    margin-bottom: 25px;
+    border: 1px solid #a4a4a4;
+    padding-left: 10px;
+    } 
+}
+.registration-radio {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+}
+.registration-submit {
+    outline: none;
+    padding: 17px 45px;
+    background-color: $ColorButton;
+    border: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 20px;
+        &:hover {
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+}
+
+.registration-info {
+    padding-left: 30px;
+
+    & h2 {
+        @include font (normal, 300, 24px, #000000); 
+    }
+    & p {
+        @include font (normal, 300, 24px, #000000);
+        margin: 0 auto;
+    }
+    & ul {
+        @include font (normal, 300, 24px, #000000);
+        line-height: 1.8;
+        list-style-type: none;
+    }
+}

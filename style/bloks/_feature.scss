@@ -1,0 +1,18 @@
+.feature {
+    background-color: $ColorBackground;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.feature-info {
+   text-align: center;
+   margin-top: 104px;
+   margin-bottom: 92px;
+}
+.feature-title {
+    @include font (normal, normal, 20px, #FBFBFB);
+    margin: 16px;
+}
+.feature-text {
+    @include font (normal, 300, 14px, #FBFBFB);
+} 

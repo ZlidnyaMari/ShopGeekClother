@@ -1,0 +1,44 @@
+#menu {
+    display: none;
+}
+.menu-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 75px;
+    left:0px;
+    right: 0px;
+    min-height: 764px;
+    display: none;
+    justify-content: flex-end;
+    z-index: 2;
+}
+#menu:checked ~ .menu-overlay {
+    display: flex;
+  }
+.menu-nav {
+    background-color: #FFFFFF;
+    width: 232px;
+    padding: 20px;
+    position: relative;
+}
+.icon-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.menu-link {
+    text-decoration: none;
+    @include font (normal, normal, 14px, #6F6E6E);
+}
+.menu-list {
+    list-style: none;
+}
+.menu-title {
+    @include font (normal, bold, 14px, #000000);
+}
+.menu-heading {
+    @include font (normal, normal, 14px, $ColorButton);
+}
+.menu-item {
+    padding: 5px;
+}

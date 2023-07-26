@@ -1,0 +1,30 @@
+.promo {
+    background-color: #F1E4E6;
+    background: linear-gradient(to right,#f3f3f3 50%,  #F1E4E6 50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.promo-img {
+    margin-left: -130px;
+    display: block;
+}
+.promo-title {
+    border-left: 15px solid $ColorButton;
+    margin: 5%;
+    white-space:nowrap;
+}
+.promo-heading {
+    @include font (normal, 900, 48px, $ColorBackground);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+}
+.promo-text {
+    @include font (normal, 700, 32px, $ColorBackground);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+}
+.colortext {
+    color:$ColorButton;
+}   

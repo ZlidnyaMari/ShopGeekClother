@@ -1,0 +1,16 @@
+.header {
+    background-color: $ColorBackground;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    margin-right: 30px;
+}
+.pagination {
+    margin-left: 35px;
+}
+.paginationX {
+    margin-left: 35px;
+}

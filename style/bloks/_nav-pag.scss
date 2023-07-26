@@ -1,0 +1,173 @@
+.navigation {
+    background-color: #F8F3F4;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation-title {
+    @include font (normal, normal, 24px, #F16D7F);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    white-space:nowrap
+}
+.breadcrumbs {
+    list-style: none;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    white-space: nowrap;
+    padding: 0;
+
+}
+.breadcrumbs li {
+    display:inline-block;
+}
+.breadcrumbs a {
+    @include font (normal, 300, 14px, #636363);
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+}
+.list {
+    position: relative;
+    width: 360px;
+    margin-top: 34px;
+    margin-bottom: 50px;
+        & summary {
+            white-space: nowrap;
+            border: none;
+            outline: none;
+            @include font (normal, 600, 14px, #000000);
+        }
+        & summary svg {
+            margin-left: 5px;
+        }
+}
+.list[open] {
+    padding-left: 10px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  }
+.list[open]>summary {
+    color: $ColorButton;
+    fill: $ColorButton;
+    outline: none;
+    border: none;
+}
+.list-title>summary{
+    color: #6F6E6E;
+    margin: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #EBEBEB;
+    border-left: 5px solid $ColorButton;
+}
+.list-title[open]>summary {
+    color: $ColorButton;
+}
+.list ::-webkit-details-marker {
+    display: none;
+}
+.list-content {
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFFFF;
+    width: 360px;
+    left: 0;
+    padding-left: 10px;
+    display: inline-grid;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.list-filter {
+    list-style: none;
+}
+.filter-link {
+    text-decoration: none;
+    @include font (normal, normal, 14px, #6F6E6E);
+}
+.filter-item {
+    padding: 5px;
+}
+.list-nav1 {
+    position: relative;
+    min-width: 150px;
+    margin-left: 10px;
+    margin-top: 34px;
+    margin-bottom: 50px;
+        & summary {
+            border: none;
+            outline: none;
+            @include font (normal, normal, 14px, #6F6E6E);
+    }
+        & summary img {
+            margin-left: 5px;
+    }
+}
+.list-nav1 ::-webkit-details-marker {
+    display: none;
+}
+.list-nav2 {
+    position: relative;
+    min-width: 80px;
+    margin-left: 10px;
+    margin-top: 34px;
+    margin-bottom: 50px;
+        & summary {
+            border: none;
+            outline: none;
+            @include font (normal, normal, 14px, #6F6E6E);
+    }
+        & summary img {
+            margin-left: 5px;
+    }
+}
+.list-nav2 ::-webkit-details-marker {
+    display: none;
+}
+.list-nav3 {
+    position: relative;
+    min-width: 80px;
+    margin-left: 10px;
+    margin-top: 34px;
+    margin-bottom: 50px;
+        & summary {
+            border: none;
+            outline: none;
+            @include font (normal, normal, 14px, #6F6E6E);
+    }
+        & summary img {
+            margin-left: 5px;
+    }
+}
+.list-nav3 ::-webkit-details-marker {
+    display: none;
+}
+.list-nav-content {
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFFFF;
+    width: 80px;
+    left: 0;
+    padding-left: 5px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        & p {
+            margin: 5px;
+            @include font (normal, normal, 14px, #6F6E6E);
+        }
+}
+.pagination-page {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+.pagination-list {
+    display: flex;
+    list-style: none;
+    outline: 1px solid #E5E5E5;
+    padding: 12px; 
+}
+.pagination-list a {
+    @include font (normal, 300, 16px, #C4C4C4);
+    text-decoration: none;
+    padding-right: 15px; 
+}

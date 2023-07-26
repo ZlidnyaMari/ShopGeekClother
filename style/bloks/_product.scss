@@ -1,0 +1,97 @@
+.product-title {
+    text-align: center;
+}
+.product-title-h2 {
+    @include font (normal, normal, 30px, $ColorBackground);
+    margin-bottom: 0;
+    margin-top: 95px;
+}
+.product-title-text {
+    @include font (normal, normal, 14px, #9F9F9F);
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.product {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.product-catalog {
+    background-color: #F8F8F8;
+    width: 360px;
+    height: 581px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 10px;
+      &:hover {
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+      }
+      &:hover .overlay {
+        opacity: 1;
+      }
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+    background-color: rgba(58, 56, 56, 0.83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    opacity: 0;
+    transition: 0.5s;
+      &-btn {
+        outline: 1px solid #FFFFFF;
+        background-color: rgba(58, 56, 56, 0.83);
+        padding: 10px;
+        @include font (normal, normal, 14px, #FFFFFF);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;   
+        }
+        &-img {
+            padding-right: 10px;
+        }  
+  }
+.product-type {
+    @include font (normal, normal, 13px, #000000);
+    margin-left: 25px;
+}
+.product-text {
+    @include font (normal, 300, 14px, #5D5D5D);
+    margin-left: 25px;
+}
+.product-price {
+    @include font (normal, normal, 16px, #F16D7F);
+    margin-left: 25px;
+}
+.product-button {
+    display: flex;
+    justify-content: center;
+}
+.product-button1 {
+    @include font (normal, normal, 16px, #F26376);
+    height: 48px;
+    width: 212px;
+    outline: 1px solid #F26376;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 90px;
+    margin-top: 25px;
+        &:hover {
+            @include hover-btn;
+        }
+}

@@ -1,0 +1,39 @@
+.categories {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.women {
+    @include categories;
+    background-image: url(../img/Group35.jpg);
+}
+.men {
+    @include categories;
+    background-image: url(../img/2-formen.jpg);
+}
+.kids {
+    @include categories;
+    background-image: url(../img/Group38.jpg);
+   
+}
+.accesories {
+    background: grey;
+    background-image: url(../img/4-ACCESORIES.jpg);
+    width: 100%;
+    min-height: 180px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categories-text {
+    @include font (normal, normal, 16px, #FFFFFF);
+    margin-bottom: 0;
+    text-align: center;
+}
+.categories-title {
+    @include font (normal, bold, 24px, #F16D7F);
+    text-align: center;
+    margin-top: 0;
+}

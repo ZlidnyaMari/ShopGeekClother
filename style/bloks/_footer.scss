@@ -1,0 +1,75 @@
+.footer {
+    background: #F4F4F4;
+    background-image: url(../img/photosubscribe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    min-height: 450px;
+}
+.footer-info {
+    @include font (normal, normal, 20px, #222224);
+    text-align: center;
+    padding-top: 96px;
+}
+.footer-form {
+    padding-top: 130px;
+    padding-right: 100px;
+}
+.form {
+    display: flex;
+}
+.footer-h3 {
+    @include font (normal, bold, 24px, #222224);
+    text-align: center;
+    margin-bottom: 0;
+}
+.footer-h4 {
+    @include font (normal, normal, 18px, #222224);
+    text-align: center;
+    margin-top: 0;
+}
+.footer-email {
+    outline: none;
+    border: none;
+    background: #E1E1E1;
+    padding:15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-right: 100px;
+}
+.footer-button {
+    outline: none;
+    border: none;
+    background: $ColorButton;
+    padding:15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    color: #FFFFFF;
+        &:hover {
+            background-color: #E1E1E1;
+            color: $ColorButton;
+            transition: 1s;
+        }
+}
+.footer-icons {
+    display: flex;
+    justify-content: space-between;
+    background-color: $ColorBackground;
+    min-height: 80px;
+    align-items: center; 
+}
+.socials {
+    background-color: #E5E5E5;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+        &:hover {
+            @include hover-btn;
+        }        
+}
+.copy {
+    @include font (normal, normal, 16px, #FBFBFB);
+}

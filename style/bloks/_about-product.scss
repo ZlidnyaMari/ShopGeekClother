@@ -1,0 +1,104 @@
+.carousel {
+    background-color: #F7F7F7;
+    min-height: 777px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #EAEAEA;
+}
+.carousel-vector {
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: #EAEAEA;
+        &:hover {
+            fill: $ColorButton;
+            transition: 0.5s;
+        }
+}
+.about-product {
+    text-align: center;
+    margin-bottom: 130px;
+}
+.about-product-wrap {
+    outline: 1px solid #EAEAEA;
+    margin-top: -70px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.about-product-h1 {
+    @include font (normal, 300, 14px, #F16D7F);
+    padding-top: 65px;
+    margin-top: 0;
+}
+.about-product-h2 {
+    @include font (normal, 300, 18px, #4D4D4D);
+} 
+.about-product-text {
+    @include font (normal, 300, 14px, #5E5E5E);
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}   
+.about-product-price {
+    @include font (normal, 300, 24px,#EF5B70);
+}
+.about-product-navigation {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.about-product-navigation a {
+    @include font (normal, normal, 14px, #6F6E6E);
+    text-decoration: none;
+    list-style: none;
+    padding-right: 20px;
+}
+.about-product-button {
+    @include font (normal, normal, 16px, #F26376);
+    padding-right: 20px;
+    text-decoration: none;
+    padding: 10px 30px;
+    outline: 1px solid #F26376;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 65px;
+    fill:#EF5B70;
+        & svg {
+            margin-right: 15px;
+           
+        }
+        &:hover {
+            animation: ani-btn 3s infinite;
+        }
+}
+@keyframes ani-btn {
+    0% {
+        color: $ColorButton;
+    }
+    50% {
+        @include hover-btn;
+    }
+    100% {
+        color: $ColorButton;
+    }
+}
+.line {
+    text-align: center;
+    width: 63px;
+    height: 3.03px;
+    background-color: #EF5B70;
+    border-color: transparent;
+}
+.line-two {
+    text-align: center;
+    max-width: 642px;
+    height: 1px;
+    background-color: #EAEAEA;
+    border-color: transparent;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
